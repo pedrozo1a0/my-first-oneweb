@@ -1,23 +1,14 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { TwiterFollowCard } from './TwiterFollowCard';
 
 function App() {
+  const userAt= (userName)=> `@${userName}`;
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <TwiterFollowCard functionAt= {userAt} isFollowing={true}  name="mister" userName="misterio" />
+  <TwiterFollowCard functionAt= {userAt} isFollowing={false} name="soldier" userName="eisol" />
+  <TwiterFollowCard  functionAt= {userAt} isFollowing name= "elonk" userName="musk" />
     </div>
   );
 }

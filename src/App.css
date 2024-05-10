@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+.tw-folloCard{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tw-folloCard-avatar{
+  width: 50px;
+  border-radius: 50%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.tw-folloCard-btn{
+  padding: 6px 16px;
+  border: 0;
+  border-radius: 999px;
+  margin-left: 30px;
+  font-weight: bold;
+  
 }
+.tw-folloCard-header{
+  display: flex;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.tw-folloCard-user{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 15px;
+  color: #ffff;
 }
-
-.App-link {
-  color: #61dafb;
+.App{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.is-following{
+  border: 1px solid red;
+}
+.tw-folloCard-btn:hover{
+  background-color: #09f;
+  transition: .3s ease background-color;
+}
+.is-following:hover{
+  background-color: red;
 }
